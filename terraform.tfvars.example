@@ -1,0 +1,18 @@
+# Donovan-Codes : Example Variable Values — Copy to terraform.tfvars and Fill In Secrets
+# Never commit terraform.tfvars — it is gitignored for security
+
+project_name = "donovan-multi-tier"
+environment  = "dev"
+aws_region   = "us-east-1"
+
+# Donovan-Codes : EC2 Auto Scaling Group Capacity Settings
+instance_type = "t3.micro"
+asg_min       = 1
+asg_max       = 3
+asg_desired   = 1
+
+# Donovan-Codes : RDS Instance Configuration — Replace Credentials Before Applying
+db_instance_class = "db.t3.micro"
+db_name           = "appdb"
+db_username       = "REPLACE_WITH_USERNAME"
+db_password       = "REPLACE_WITH_PASSWORD"
