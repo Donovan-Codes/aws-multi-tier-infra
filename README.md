@@ -114,6 +114,14 @@ Two CPU-based alarms configured with actions enabled. The `high-cpu` alarm trigg
 
 ---
 
+### S3 Remote State Bucket
+
+`donovan-multi-tier-tfstate-b8753066` provisioned in us-east-1 via the bootstrap module to store Terraform remote state. The bucket is versioned, AES-256 encrypted, and blocks all public access — keeping infrastructure state secure and recoverable across deployments.
+
+![S3 Remote State Bucket](screenshots/s3bucket_deployment.jpg)
+
+---
+
 ## Module Structure
 
 ```
